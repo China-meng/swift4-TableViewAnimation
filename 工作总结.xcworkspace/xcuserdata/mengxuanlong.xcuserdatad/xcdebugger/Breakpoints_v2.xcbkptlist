@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5de5;&#x4f5c;&#x603b;&#x7ed3;/Home(&#x9996;&#x9875;)/&#x4f7f;&#x7528;&#x573a;&#x666f;/&#x97f3;&#x89c6;&#x9891;&#x64ad;&#x653e;/&#x97f3;&#x4e50;&#x64ad;&#x653e;/LrcScrollView.swift"
+            timestampString = "527151724.90902"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "LrcScrollView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5de5;&#x4f5c;&#x603b;&#x7ed3;/Home(&#x9996;&#x9875;)/&#x4f7f;&#x7528;&#x573a;&#x666f;/&#x97f3;&#x89c6;&#x9891;&#x64ad;&#x653e;/&#x57fa;&#x7c7b;/PlayerView.swift"
+            timestampString = "532410170.060386"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
+            landmarkName = "makeSubViews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5de5;&#x4f5c;&#x603b;&#x7ed3;/Home(&#x9996;&#x9875;)/&#x4f7f;&#x7528;&#x573a;&#x666f;/&#x97f3;&#x89c6;&#x9891;&#x64ad;&#x653e;/&#x57fa;&#x7c7b;/PlayerView.swift"
+            timestampString = "532410170.060481"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "makeUI()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5de5;&#x4f5c;&#x603b;&#x7ed3;/Home(&#x9996;&#x9875;)/&#x4f7f;&#x7528;&#x573a;&#x666f;/&#x97f3;&#x89c6;&#x9891;&#x64ad;&#x653e;/&#x57fa;&#x7c7b;/PlayerView.swift"
+            timestampString = "532410170.060565"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "591"
+            endingLineNumber = "591"
+            landmarkName = "originalScreen()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5de5;&#x4f5c;&#x603b;&#x7ed3;/Home(&#x9996;&#x9875;)/&#x4f7f;&#x7528;&#x573a;&#x666f;/&#x97f3;&#x89c6;&#x9891;&#x64ad;&#x653e;/&#x57fa;&#x7c7b;/PlayerView.swift"
+            timestampString = "532410170.060648"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "614"
+            endingLineNumber = "614"
+            landmarkName = "fullScreenWithDirection(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5de5;&#x4f5c;&#x603b;&#x7ed3;/Home(&#x9996;&#x9875;)/&#x4f7f;&#x7528;&#x573a;&#x666f;/&#x97f3;&#x89c6;&#x9891;&#x64ad;&#x653e;/&#x97f3;&#x4e50;&#x64ad;&#x653e;/MusicPlayerController.swift"
+            timestampString = "532410170.060749"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "initData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5de5;&#x4f5c;&#x603b;&#x7ed3;/Home(&#x9996;&#x9875;)/&#x4f7f;&#x7528;&#x573a;&#x666f;/&#x97f3;&#x89c6;&#x9891;&#x64ad;&#x653e;/&#x97f3;&#x4e50;&#x64ad;&#x653e;/MusicPlayerController.swift"
+            timestampString = "532410170.060845"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "initData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5de5;&#x4f5c;&#x603b;&#x7ed3;/Home(&#x9996;&#x9875;)/&#x4f7f;&#x7528;&#x573a;&#x666f;/&#x67f1;&#x72b6;&#x56fe;,&#x6298;&#x7ebf;&#x56fe;,&#x997c;&#x72b6;&#x56fe;/BarViewController.swift"
+            timestampString = "532338534.794165"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "setupUI()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5de5;&#x4f5c;&#x603b;&#x7ed3;/Home(&#x9996;&#x9875;)/&#x4f7f;&#x7528;&#x573a;&#x666f;/&#x67f1;&#x72b6;&#x56fe;,&#x6298;&#x7ebf;&#x56fe;,&#x997c;&#x72b6;&#x56fe;/&#x67f1;&#x72b6;&#x56fe;/BarViewController.swift"
+            timestampString = "532339555.880115"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "setupUI()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5de5;&#x4f5c;&#x603b;&#x7ed3;/Home(&#x9996;&#x9875;)/&#x4f7f;&#x7528;&#x573a;&#x666f;/&#x67f1;&#x72b6;&#x56fe;,&#x6298;&#x7ebf;&#x56fe;,&#x997c;&#x72b6;&#x56fe;/&#x67f1;&#x72b6;&#x56fe;/BarViewController.swift"
+            timestampString = "532339555.88065"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "setupUI()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

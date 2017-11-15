@@ -1,0 +1,21 @@
+[
+
+  {
+    "singer" : "周杰伦",
+    "filename" : "10736444.mp3",
+    "icon" : "jay.jpg",
+    "name" : "简单爱",
+    "lrcname" : "10736444.lrc",
+    "singerIcon" : "jay_icon.png"
+  },
+
+
+  {
+    "singer" : "陈奕迅",
+    "filename" : "339744.mp3",
+    "icon" : "eason.jpg",
+    "name" : "最佳损友",
+    "lrcname" : "339744.lrc",
+    "singerIcon" : "eason_icon.jpg"
+  }
+]

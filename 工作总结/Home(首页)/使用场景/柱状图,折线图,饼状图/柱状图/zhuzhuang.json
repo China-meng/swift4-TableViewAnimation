@@ -1,0 +1,8 @@
+
+{"resultCode":"0","resultDesc":"success","resultData":{"NextlevelName":"初级会员",
+    "progressList":[{"cardName":"普通卡","right":"80","totalMoney":"130"},
+                    {"cardName":"储值卡","right":"40","totalMoney":"740"},
+                    {"cardName":"金卡","right":"30","totalMoney":"500"},
+                    {"cardName":"银卡","right":"30","totalMoney":"880"},
+                    {"cardName":"其他卡","right":"80","totalMoney":"800"}],
+    "maxLevelFlg":"1","levelName":"初级会员","memberCredit":200,"dValue":801,"memberBenefitsLst":[{"benefitsDesc":"会员优先购票","benefitsName":"优先购票","benefitsSort":"1"},{"benefitsDesc":"会员价 半价","benefitsName":"会员特价","benefitsSort":"2"}]}}
