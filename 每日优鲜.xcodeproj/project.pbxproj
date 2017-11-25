@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7705A30E1FC7CAED0095FC33 /* LeftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7705A30D1FC7CAED0095FC33 /* LeftTableViewCell.swift */; };
+		77CC0A241FC8F7310062DBE6 /* TopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CC0A231FC8F7310062DBE6 /* TopTableViewCell.swift */; };
 		77EC55B51FC7C65400ED5C01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC55B41FC7C65400ED5C01 /* AppDelegate.swift */; };
 		77EC55BA1FC7C65400ED5C01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EC55B81FC7C65400ED5C01 /* Main.storyboard */; };
 		77EC55BC1FC7C65400ED5C01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EC55BB1FC7C65400ED5C01 /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7705A30D1FC7CAED0095FC33 /* LeftTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTableViewCell.swift; sourceTree = "<group>"; };
+		77CC0A231FC8F7310062DBE6 /* TopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTableViewCell.swift; sourceTree = "<group>"; };
 		77EC55B11FC7C65400ED5C01 /* 每日优鲜.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "每日优鲜.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EC55B41FC7C65400ED5C01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77EC55B91FC7C65400ED5C01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 				77EC55C91FC7C77C00ED5C01 /* BigGroupsModel.swift */,
 				77EC55C81FC7C77C00ED5C01 /* FriendsModel.swift */,
 				77EC55CE1FC7C7D300ED5C01 /* GroupHeaderView.swift */,
-				7705A30D1FC7CAED0095FC33 /* LeftTableViewCell.swift */,
+				77CC0A231FC8F7310062DBE6 /* TopTableViewCell.swift */,
 				77EC55B81FC7C65400ED5C01 /* Main.storyboard */,
 				77EC55BB1FC7C65400ED5C01 /* Assets.xcassets */,
 				77EC55BD1FC7C65400ED5C01 /* LaunchScreen.storyboard */,
@@ -156,8 +156,8 @@
 				77EC55CF1FC7C7D300ED5C01 /* GroupHeaderView.swift in Sources */,
 				77EC55CB1FC7C77C00ED5C01 /* BigGroupsModel.swift in Sources */,
 				77EC55CD1FC7C79200ED5C01 /* JobSummaryController.swift in Sources */,
-				7705A30E1FC7CAED0095FC33 /* LeftTableViewCell.swift in Sources */,
 				77EC55B51FC7C65400ED5C01 /* AppDelegate.swift in Sources */,
+				77CC0A241FC8F7310062DBE6 /* TopTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

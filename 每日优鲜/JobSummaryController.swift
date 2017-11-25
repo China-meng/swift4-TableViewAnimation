@@ -11,32 +11,36 @@ private let kCellIdentify = "kCellIdentify"
 let kStatusBarHeight :CGFloat = UIApplication.shared.statusBarFrame.size.height
 let kNavigationBarHeight :CGFloat = 44.0
 let kNavigationAndStatusBarHeight :CGFloat = (kStatusBarHeight + 44.0)
-let kLeftTableViewCell = "LeftTableViewCell"
+let kTopTableViewCell = "TopTableViewCell"
+let kScreenW = UIScreen.main.bounds.width
 
 class JobSummaryController: UIViewController {
     lazy var bigGroupsModel :[BigGroupsModel] = [BigGroupsModel]()
-    let  arr = ["闭包","字典转模型","下拉刷新","转场动画","周杰伦","小孟"]
+    let  arr = ["宝贝","详情","评价","推荐"]
     fileprivate var selectIndex = 0
     fileprivate var isScrollDown = true
     fileprivate var lastOffsetY : CGFloat = 0.0
     
     fileprivate lazy var botoomTableView : UITableView = {[unowned self]in
-        let botoomTableView = UITableView(frame: CGRect(x: 0, y: 64 + kNavigationAndStatusBarHeight, width: self.view.bounds.width, height: self.view.bounds.height - kNavigationAndStatusBarHeight * 2 - 64), style: .grouped)
+        let botoomTableView = UITableView(frame: CGRect(x: 0, y: 64 + kNavigationAndStatusBarHeight, width: self.view.bounds.width, height: self.view.bounds.height - kNavigationAndStatusBarHeight * 3 ), style: .plain)
         botoomTableView.dataSource = self
         botoomTableView.delegate = self
         return botoomTableView
         }()
     fileprivate lazy var topTableView : UITableView = {
         let topTableView = UITableView(frame:  CGRect(x: 0, y: self.view.frame.size.height / 2 - kNavigationAndStatusBarHeight, width:kNavigationAndStatusBarHeight , height:self.view.frame.size.height - kNavigationAndStatusBarHeight ))
+
         topTableView.delegate = self
         topTableView.dataSource = self
  
-        topTableView.rowHeight = 80
+        topTableView.rowHeight = kScreenW / 4
+        print(topTableView.rowHeight)
         topTableView.showsVerticalScrollIndicator = false
         topTableView.backgroundColor = UIColor.green
-        topTableView.register(LeftTableViewCell.self, forCellReuseIdentifier: kLeftTableViewCell)
+        topTableView.register(TopTableViewCell.self, forCellReuseIdentifier: kTopTableViewCell)
+
         topTableView.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi / 2))
-       topTableView.frame = CGRect(x: 0, y: kNavigationAndStatusBarHeight, width:self.view.frame.size.height - kNavigationAndStatusBarHeight , height:kNavigationAndStatusBarHeight )
+        topTableView.frame = CGRect(x: 0, y: kNavigationAndStatusBarHeight, width:self.view.frame.size.height - kNavigationAndStatusBarHeight , height:kNavigationAndStatusBarHeight )
         return topTableView
     }()
     
@@ -78,7 +82,6 @@ extension JobSummaryController {
             self.bigGroupsModel.append(FriendsModel(dic: dict))
         }
         
-        
         botoomTableView.sectionHeaderHeight = 40
         botoomTableView.register(GroupHeaderView.self, forHeaderFooterViewReuseIdentifier: "kGroupHeaderView")
 
@@ -94,16 +97,18 @@ extension JobSummaryController: UITableViewDataSource,UITableViewDelegate {
         if (botoomTableView == tableView)
             && !isScrollDown
             && (botoomTableView.isDragging || botoomTableView.isDecelerating) {
-            selectRow(index: section)
+            selectRow(index: section )
         }
+
     }
+
     // TableView分区标题展示结束
     func tableView(_ tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {
         // 当前的 tableView 是 botoomTableView，botoomTableView 滚动的方向向下，botoomTableView 是用户拖拽而产生滚动的（（主要判断 botoomTableView 用户拖拽而滚动的，还是点击 topTableView 而滚动的）
         if (botoomTableView == tableView)
             && isScrollDown
             && (botoomTableView.isDragging || botoomTableView.isDecelerating) {
-            selectRow(index: section + 1)
+            selectRow(index: section + 1 )
         }
     }
     
@@ -112,14 +117,19 @@ extension JobSummaryController: UITableViewDataSource,UITableViewDelegate {
         print("下标"+" --- \(String(describing:index))")
         if index <= arr.count - 1 {
             topTableView.selectRow(at: IndexPath(row: index, section: 0), animated: true, scrollPosition: .top)
-            if index == arr.count - 1 {
-                let contentInsets:UIEdgeInsets = UIEdgeInsetsMake(-kNavigationAndStatusBarHeight, 0.0, 0, 0.0);
-                self.topTableView.contentInset = contentInsets
-            } else {
-                let contentInsets:UIEdgeInsets = UIEdgeInsetsMake(0, 0.0, 0, 0.0);
-                self.topTableView.contentInset = contentInsets
-                
-            }
+          
+            /*
+             如果标题比较多
+             if index == arr.count - 1 {
+             let contentInsets:UIEdgeInsets = UIEdgeInsetsMake(-kNavigationAndStatusBarHeight, 0.0, 0, 0.0);
+             self.topTableView.contentInset = contentInsets
+             } else {
+             let contentInsets:UIEdgeInsets = UIEdgeInsetsMake(0, 0.0, 0, 0.0);
+             self.topTableView.contentInset = contentInsets
+             
+             }
+             */
+
         }
 
     }
@@ -170,7 +180,7 @@ extension JobSummaryController: UITableViewDataSource,UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if topTableView == tableView {
-            let cell = tableView.dequeueReusableCell(withIdentifier: kLeftTableViewCell, for: indexPath) as! LeftTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: kTopTableViewCell, for: indexPath) as! TopTableViewCell
             cell.selectionStyle = .none
             cell.nameLabel.text = arr[indexPath.row]
             cell.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi / 2))

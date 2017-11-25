@@ -36,7 +36,7 @@
               }
               ],
  "online" : 3,
- "nameGroup" : "闭包"
+ "nameGroup" : "宝贝"
  },
  {
  "friends" : [
@@ -72,7 +72,7 @@
               }
               ],
  "online" : 0,
- "nameGroup" : "字典转模型"
+ "nameGroup" : "详情"
  },
  {
  "friends" : [
@@ -109,7 +109,7 @@
               }
               ],
  "online" : 1,
- "nameGroup" : "下拉刷新"
+ "nameGroup" : "评价"
  },
  {
  "friends" : [
@@ -132,7 +132,41 @@
               "name" : "待定"
               },
 
-
+              {
+              "vip" : 1,
+              "icon" : "002.png",
+              "intro" : "待定",
+              "name" : "待定"
+              },
+              {
+              "vip" : 0,
+              "icon" : "004.png",
+              "intro" : "待定",
+              "name" : "待定"
+              },              {
+              "vip" : 1,
+              "icon" : "002.png",
+              "intro" : "待定",
+              "name" : "待定"
+              },
+              {
+              "vip" : 0,
+              "icon" : "004.png",
+              "intro" : "待定",
+              "name" : "待定"
+              },
+              {
+              "vip" : 1,
+              "icon" : "002.png",
+              "intro" : "待定",
+              "name" : "待定"
+              },
+              {
+              "vip" : 0,
+              "icon" : "004.png",
+              "intro" : "待定",
+              "name" : "待定"
+              },
               {
               "vip" : 0,
               "icon" : "007.png",
@@ -153,91 +187,9 @@
               }
               ],
  "online" : 11,
- "nameGroup" : "转场动画"
+ "nameGroup" : "推荐"
  },
- {
- "friends" : [
 
-
-              {
-              "vip" : 0,
-              "icon" : "004.png",
-              "intro" : "待定",
-              "name" : "待定"
-              },
-              {
-              "vip" : 0,
-              "icon" : "004.png",
-              "intro" : "待定",
-              "name" : "待定"
-              },           {
-              "vip" : 0,
-              "icon" : "004.png",
-              "intro" : "待定",
-              "name" : "待定"
-              },           {
-              "vip" : 0,
-              "icon" : "004.png",
-              "intro" : "待定",
-              "name" : "待定"
-              },           {
-              "vip" : 0,
-              "icon" : "004.png",
-              "intro" : "待定",
-              "name" : "待定"
-              },
-
-              {
-              "vip" : 0,
-              "icon" : "003.png",
-              "intro" : "待定",
-              "name" : "待定"
-              }
-              ],
- "online" : 19,
- "nameGroup" : "周杰伦"
- },
- {
- "friends" : [
-              {
-              "vip" : 0,
-              "icon" : "004.png",
-              "intro" : "待定",
-              "name" : "待定"
-              },
-              {
-              "vip" : 0,
-              "icon" : "004.png",
-              "intro" : "待定",
-              "name" : "待定"
-              },           {
-              "vip" : 0,
-              "icon" : "004.png",
-              "intro" : "待定",
-              "name" : "待定"
-              },           {
-              "vip" : 0,
-              "icon" : "004.png",
-              "intro" : "待定",
-              "name" : "待定"
-              },           {
-              "vip" : 0,
-              "icon" : "004.png",
-              "intro" : "待定",
-              "name" : "待定"
-              },
-
-
-              {
-              "vip" : 0,
-              "icon" : "007.png",
-              "intro" : "待定",
-              "name" : "待定"
-              }
-              ],
- "online" : 0,
- "nameGroup" : "小孟"
- },
 
  
  
