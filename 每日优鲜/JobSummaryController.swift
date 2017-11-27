@@ -22,7 +22,7 @@ class JobSummaryController: UIViewController {
     fileprivate var lastOffsetY : CGFloat = 0.0
     
     fileprivate lazy var botoomTableView : UITableView = {[unowned self]in
-        let botoomTableView = UITableView(frame: CGRect(x: 0, y: 64 + kNavigationAndStatusBarHeight, width: self.view.bounds.width, height: self.view.bounds.height - kNavigationAndStatusBarHeight * 3 ), style: .plain)
+        let botoomTableView = UITableView(frame: CGRect(x: 0, y: 64 + kNavigationAndStatusBarHeight, width: self.view.bounds.width, height: self.view.bounds.height - kNavigationAndStatusBarHeight * 3 ), style: .grouped)
         botoomTableView.dataSource = self
         botoomTableView.delegate = self
         return botoomTableView
@@ -103,7 +103,7 @@ extension JobSummaryController: UITableViewDataSource,UITableViewDelegate {
     }
 
     // TableView分区标题展示结束
-    func tableView(_ tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {
+    func tableView(_ tableView: UITableView, didEndDisplayingFooterView view: UIView, forSection section: Int) {
         // 当前的 tableView 是 botoomTableView，botoomTableView 滚动的方向向下，botoomTableView 是用户拖拽而产生滚动的（（主要判断 botoomTableView 用户拖拽而滚动的，还是点击 topTableView 而滚动的）
         if (botoomTableView == tableView)
             && isScrollDown
@@ -238,6 +238,22 @@ extension JobSummaryController: UITableViewDataSource,UITableViewDelegate {
         }
      
     }
-
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if topTableView == tableView {
+            return 0
+        } else {
+            return  1
+        }
+    }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        if topTableView == tableView {
+            return nil
+        } else {
+            let viewM = UIView(frame: CGRect(x: 0, y: 0, width: kScreenW, height: 1))
+            return viewM
+            
+        }
+        
+    }
     
 }
