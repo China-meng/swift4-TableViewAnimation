@@ -3,20 +3,23 @@ PODS:
   - AlamofireImage (3.2.0):
     - Alamofire (~> 4.1)
   - Kingfisher (3.12.1)
+  - MJRefresh (3.1.15)
   - SnapKit (3.2.0)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
   - Kingfisher
+  - MJRefresh
   - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
   Kingfisher: 7e87498c3b795c2b8f6430fd5853ae5b5548ff9c
+  MJRefresh: 9af70f5f9327a2cf87f0fb5929f35fcc2fa638ea
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: 9c874cb3a7b2f24ef32126cc0d57af98d526d38d
+PODFILE CHECKSUM: 0978a3aca5b2cee21cba90942c7d9726e8e1a9cf
 
 COCOAPODS: 1.1.1

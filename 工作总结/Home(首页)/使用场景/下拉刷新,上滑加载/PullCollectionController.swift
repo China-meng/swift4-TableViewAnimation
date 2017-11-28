@@ -7,7 +7,10 @@
 //
 
 import UIKit
-
+import MJRefresh   // 顶部刷新
+let header = MJRefreshNormalHeader()
+// 底部刷新
+let footer = MJRefreshAutoNormalFooter()
 private let kItemMargin :CGFloat = 10
 private let kItemW = (kScreenW - 3 * kItemMargin) / 2
 private let kNormalItemH = kItemW * 3 / 4
@@ -15,6 +18,10 @@ private let kNormalCellID = "kNormalCellID"
 
 class PullCollectionController: UIViewController {
     internal var list: [String] = []
+    // 顶部刷新
+    let header = MJRefreshNormalHeader()
+    // 底部刷新
+    let footer = MJRefreshAutoNormalFooter()
 
     fileprivate lazy var collectionView : UICollectionView = {[unowned self]in
         let layout = UICollectionViewFlowLayout()
@@ -34,14 +41,46 @@ class PullCollectionController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      
 
         // 设置UI界面
         setupUI()
         // 请求数据
         getHttpData()
+   
         // 下拉刷新
-        pullRefreshHttpData()
+        header.setRefreshingTarget(self, refreshingAction: #selector(headerRefresh))
+        self.collectionView.mj_header = header
+        // 上拉刷新
+        footer.setRefreshingTarget(self, refreshingAction:  #selector(footerRefresh))
+        self.collectionView.mj_footer = footer
+        
+
     }
+    // 顶部刷新
+    func headerRefresh(){
+        print("下拉刷新")
+        // 结束刷新
+        collectionView.mj_header.endRefreshing()
+        getHttpData()
+
+    }
+    func footerRefresh(){
+        print("上拉刷新")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            for item in 11...20 {
+                self.list.append(String(item))
+            }
+            self.collectionView.mj_footer.endRefreshing()
+            
+            self.collectionView.reloadData()
+        }
+
+
+        
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -50,6 +89,7 @@ class PullCollectionController: UIViewController {
     
 
 }
+
 // MARK: - 设置UI界面内容
 extension PullCollectionController {
     fileprivate func setupUI() {
@@ -62,10 +102,11 @@ extension PullCollectionController {
 extension PullCollectionController {
     fileprivate func getHttpData(){
         list.removeAll()
-        print("1 秒后输出")
+        print("网络请求")
         for item in 1...10 {
             list.append(String(item))
         }
+        collectionView.reloadData()
  
 
   }
@@ -84,36 +125,4 @@ extension PullCollectionController: UICollectionViewDataSource {
     }
 
 }
-// MARK:- 下拉刷新
-extension PullCollectionController {
-    fileprivate func pullRefreshHttpData() {
-        
-        // 下拉刷新
-        let data = try! Data(contentsOf: Bundle.main.url(forResource: "refresh.gif", withExtension: nil)!)
-        let textItem = TextItem(normalText: VerticalHintText.headerNomalText, pullingText: VerticalHintText.headerPullingText, refreshingText: VerticalHintText.headerRefreshText, nomoreDataText: nil, font: UIFont.systemFont(ofSize: 13), color: UIColor.black)
-        
-        
-        collectionView.sy_header = GifTextHeaderFooter(data: data,textItem:textItem, orientation: .top, height: 60,contentMode:.scaleAspectFit,completion: { [weak self] in
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                self?.getHttpData()
-                self?.collectionView.sy_header?.endRefreshing()
-                self?.collectionView.reloadData()
-            }
 
-        })
-        
-        
-        let textItem2 = TextItem(normalText: VerticalHintText.footerNomalText, pullingText: VerticalHintText.footerPullingText, refreshingText: VerticalHintText.footerRefreshText, nomoreDataText:nil ,font: UIFont.systemFont(ofSize: 13), color: UIColor.black)
-        collectionView.sy_footer = GifTextHeaderFooter(data: data,textItem:textItem2, orientation: .bottom, height: 60,contentMode:.scaleAspectFit,completion: { [weak self] in
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                for item in 11...20 {
-                    self?.list.append(String(item))
-                }
-                self?.collectionView.sy_footer?.endRefreshing()
-                self?.collectionView.reloadData()
-            }
-        })
-
-        
-    }
-}

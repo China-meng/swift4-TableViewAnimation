@@ -163,5 +163,21 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5de5;&#x4f5c;&#x603b;&#x7ed3;/Home(&#x9996;&#x9875;)/&#x4f7f;&#x7528;&#x573a;&#x666f;/&#x4e0b;&#x62c9;&#x5237;&#x65b0;,&#x4e0a;&#x6ed1;&#x52a0;&#x8f7d;/PullCollectionController.swift"
+            timestampString = "533548556.694086"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "footerRefresh()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
